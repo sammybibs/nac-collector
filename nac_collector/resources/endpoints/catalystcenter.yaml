@@ -2,6 +2,10 @@
   endpoint: /dna/intent/api/v1/wirelessSettings/anchorGroups
 - name: anycast_gateway
   endpoint: /dna/intent/api/v1/sda/anycastGateways
+- name: application
+  endpoint: /dna/intent/api/v2/applications
+- name: application_set
+  endpoint: /dna/intent/api/v2/application-policy-application-set
 - name: area
   endpoint: /dna/intent/api/v2/site
 - name: assign_credentials
@@ -35,8 +39,6 @@
   endpoint: /api/v1/template-programmer/extendedTemplates
 - name: fabric_multicast_virtual_network
   endpoint: /dna/intent/api/v1/sda/multicast/virtualNetworks
-- name: fabric_virtual_network
-  endpoint: /dna/intent/api/v1/virtual-network
 - name: update_device_management_address
   endpoint: /dna/intent/api/v1/network-device
 - name: device_replacement
@@ -65,6 +67,8 @@
   endpoint: /dna/intent/api/v1/sda/provisionDevices
 - name: fabric_sites
   endpoint: /dna/intent/api/v1/sda/fabricSites
+- name: fabric_virtual_network
+  endpoint: /dna/intent/api/v1/virtual-network
 - name: ip_pools
   endpoint: /dna/intent/api/v1/ipam/globalIpAddressPools
 - name: network
@@ -130,6 +134,8 @@
   endpoint: /dna/intent/api/v2/template-programmer/project
   import_id_attributes:
   - name: id
+- name: qos_policy_setting
+  endpoint: /dna/intent/api/v1/qosPolicySetting
 - name: role
   endpoint: /dna/system/api/v1/roles
 - name: site_settings
@@ -167,6 +173,8 @@
   endpoint: /dna/intent/api/v1/enterprise-ssid
 - name: wireless_interface
   endpoint: /dna/intent/api/v1/wirelessSettings/interfaces
+- name: wireless_preauth_acl
+  endpoint: /dna/intent/api/v1/wirelessSettings/preAuthAcls
 - name: wireless_profile
   endpoint: /intent/api/v1/wirelessProfiles
   children:
